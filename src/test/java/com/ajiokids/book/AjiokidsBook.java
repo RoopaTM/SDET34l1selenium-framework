@@ -19,7 +19,7 @@ public class AjiokidsBook
 	{
 		ChromeOptions opt= new ChromeOptions(); // object creation
 	    opt.addArguments("--disable-notifications");
-		WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup(); // launch chrome driver
 		WebDriver driver=new ChromeDriver(opt);
 		driver.get("https://www.ajio.com/");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
