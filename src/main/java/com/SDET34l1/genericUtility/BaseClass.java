@@ -57,7 +57,7 @@ public class BaseClass
 	{
 		
 		JavaLibrary jutil = new JavaLibrary();
-		FileLibrary.openPropertyFile(Iconstantpath.PROPERTYFILE_PATH);
+		FileLibrary.openPropertyFile(Iconstantpath.PROPERTYFILE_PATH);//
 		String url = FileLibrary.getDataFromPropertyFile("url");
 		un = FileLibrary.getDataFromPropertyFile("un");
 		pwd = FileLibrary.getDataFromPropertyFile("pwd");
