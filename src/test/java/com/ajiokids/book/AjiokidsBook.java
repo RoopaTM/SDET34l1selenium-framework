@@ -17,7 +17,7 @@ public class AjiokidsBook
 
 	public static void main(String[] args) throws Throwable
 	{
-		ChromeOptions opt= new ChromeOptions();
+		ChromeOptions opt= new ChromeOptions(); // object creation
 	    opt.addArguments("--disable-notifications");
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver(opt);
