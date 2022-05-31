@@ -2,86 +2,82 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-23T23:06:02 GMT-07:00" name="Default suite" finished-at="2022-05-23T23:06:03 GMT-07:00" duration-ms="671">
+  <suite started-at="2022-05-31T00:57:20 GMT-07:00" name="Suite" finished-at="2022-05-31T00:57:20 GMT-07:00" duration-ms="234">
     <groups>
       <group name="sanity">
-        <method signature="CreateContactsTest.creatContactTest()[pri:0, instance:com.vtiger.contactsTest.CreateContactsTest@4b869331]" name="creatContactTest" class="com.vtiger.contactsTest.CreateContactsTest"/>
+        <method signature="CreateContactsTest.creatContactTest()[pri:0, instance:com.vtiger.contactsTest.CreateContactsTest@ce9b9a9]" name="creatContactTest" class="com.vtiger.contactsTest.CreateContactsTest"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2022-05-23T23:06:02 GMT-07:00" name="Default test" finished-at="2022-05-23T23:06:03 GMT-07:00" duration-ms="671">
+    <test started-at="2022-05-31T00:57:20 GMT-07:00" name="Test" finished-at="2022-05-31T00:57:20 GMT-07:00" duration-ms="234">
       <class name="com.vtiger.contactsTest.CreateContactsTest">
-        <test-method is-config="true" signature="beforesuit1Test()[pri:0, instance:com.vtiger.contactsTest.CreateContactsTest@4b869331]" started-at="2022-05-23T23:06:00 GMT-07:00" name="beforesuit1Test" finished-at="2022-05-23T23:06:02 GMT-07:00" duration-ms="2555" status="PASS">
+        <test-method is-config="true" signature="beforesuit1Test()[pri:0, instance:com.vtiger.contactsTest.CreateContactsTest@ce9b9a9]" started-at="2022-05-31T00:57:20 GMT-07:00" name="beforesuit1Test" finished-at="2022-05-31T00:57:20 GMT-07:00" duration-ms="63" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[.\src\test\resources\CommonDta.Properties (The system cannot find the file specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: .\src\test\resources\CommonDta.Properties (The system cannot find the file specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:153)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:108)
+at com.SDET34l1.genericUtility.FileLibrary.openPropertyFile(FileLibrary.java:25)
+at com.SDET34l1.genericUtility.BaseClass.beforesuit1Test(BaseClass.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforesuit1Test -->
-        <test-method is-config="true" signature="beforeClass1Test(java.lang.String)[pri:0, instance:com.vtiger.contactsTest.CreateContactsTest@4b869331]" started-at="2022-05-23T23:06:02 GMT-07:00" name="beforeClass1Test" finished-at="1969-12-31T16:00:00 GMT-08:00" duration-ms="-1653372362944" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method beforeClass1Test but has not been marked @Optional or defined
-in C:\Users\Roopa\AppData\Local\Temp\testng-eclipse-75917856\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method beforeClass1Test but has not been marked @Optional or defined
-in C:\Users\Roopa\AppData\Local\Temp\testng-eclipse-75917856\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="beforeClass1Test(java.lang.String)[pri:0, instance:com.vtiger.contactsTest.CreateContactsTest@ce9b9a9]" started-at="2022-05-31T00:57:20 GMT-07:00" name="beforeClass1Test" finished-at="1969-12-31T16:00:00 GMT-08:00" duration-ms="-1653983840810" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass1Test -->
-        <test-method is-config="true" signature="beforeMethod1Test()[pri:0, instance:com.vtiger.contactsTest.CreateContactsTest@4b869331]" started-at="2022-05-23T23:06:03 GMT-07:00" name="beforeMethod1Test" finished-at="1969-12-31T16:00:00 GMT-08:00" duration-ms="-1653372363356" status="SKIP">
+        <test-method is-config="true" signature="beforeMethod1Test()[pri:0, instance:com.vtiger.contactsTest.CreateContactsTest@ce9b9a9]" started-at="2022-05-31T00:57:20 GMT-07:00" name="beforeMethod1Test" finished-at="1969-12-31T16:00:00 GMT-08:00" duration-ms="-1653983840853" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod1Test -->
-        <test-method signature="creatContactTest()[pri:0, instance:com.vtiger.contactsTest.CreateContactsTest@4b869331]" started-at="2022-05-23T23:06:03 GMT-07:00" name="creatContactTest" description="testng:- CreateContactTest" finished-at="2022-05-23T23:06:03 GMT-07:00" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
+        <test-method signature="creatContactTest()[pri:0, instance:com.vtiger.contactsTest.CreateContactsTest@ce9b9a9]" started-at="2022-05-31T00:57:20 GMT-07:00" name="creatContactTest" description="testng:- CreateContactTest" finished-at="2022-05-31T00:57:20 GMT-07:00" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
             <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method beforeClass1Test but has not been marked @Optional or defined
-in C:\Users\Roopa\AppData\Local\Temp\testng-eclipse-75917856\testng-customsuite.xml]]>
+              <![CDATA[.\src\test\resources\CommonDta.Properties (The system cannot find the file specified)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method beforeClass1Test but has not been marked @Optional or defined
-in C:\Users\Roopa\AppData\Local\Temp\testng-eclipse-75917856\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+              <![CDATA[java.io.FileNotFoundException: .\src\test\resources\CommonDta.Properties (The system cannot find the file specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:153)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:108)
+at com.SDET34l1.genericUtility.FileLibrary.openPropertyFile(FileLibrary.java:25)
+at com.SDET34l1.genericUtility.BaseClass.beforesuit1Test(BaseClass.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)
 at org.testng.SuiteRunner.run(SuiteRunner.java:276)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
@@ -94,23 +90,23 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- creatContactTest -->
-        <test-method is-config="true" signature="afterMethod1Test()[pri:0, instance:com.vtiger.contactsTest.CreateContactsTest@4b869331]" started-at="2022-05-23T23:06:03 GMT-07:00" name="afterMethod1Test" finished-at="1969-12-31T16:00:00 GMT-08:00" duration-ms="-1653372363524" status="SKIP">
+        <test-method is-config="true" signature="afterMethod1Test()[pri:0, instance:com.vtiger.contactsTest.CreateContactsTest@ce9b9a9]" started-at="2022-05-31T00:57:20 GMT-07:00" name="afterMethod1Test" finished-at="1969-12-31T16:00:00 GMT-08:00" duration-ms="-1653983840963" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod1Test -->
-        <test-method is-config="true" signature="afterClass1Test()[pri:0, instance:com.vtiger.contactsTest.CreateContactsTest@4b869331]" started-at="2022-05-23T23:06:03 GMT-07:00" name="afterClass1Test" finished-at="1969-12-31T16:00:00 GMT-08:00" duration-ms="-1653372363543" status="SKIP">
+        <test-method is-config="true" signature="afterClass1Test()[pri:0, instance:com.vtiger.contactsTest.CreateContactsTest@ce9b9a9]" started-at="2022-05-31T00:57:20 GMT-07:00" name="afterClass1Test" finished-at="1969-12-31T16:00:00 GMT-08:00" duration-ms="-1653983840970" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass1Test -->
-        <test-method is-config="true" signature="afterSuit1Test()[pri:0, instance:com.vtiger.contactsTest.CreateContactsTest@4b869331]" started-at="2022-05-23T23:06:03 GMT-07:00" name="afterSuit1Test" finished-at="2022-05-23T23:06:03 GMT-07:00" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterSuit1Test()[pri:0, instance:com.vtiger.contactsTest.CreateContactsTest@ce9b9a9]" started-at="2022-05-31T00:57:21 GMT-07:00" name="afterSuit1Test" finished-at="1969-12-31T16:00:00 GMT-08:00" duration-ms="-1653983841159" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuit1Test -->
       </class> <!-- com.vtiger.contactsTest.CreateContactsTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
