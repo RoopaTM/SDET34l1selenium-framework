@@ -8,7 +8,7 @@ public interface Iconstantpath
 {
 
 	
-		String PROPERTYFILE_PATH="./src/test/resources/CommonDta.Properties";
+		String PROPERTYFILE_PATH="./src/test/resources/CommonData.Properties";
 		String RMGPROPERTYFILE_PATH="./src/test/resources/rmgyantra.Properties";
 		String RMGEXCEL_PATH="./src/test/resources/rmgyantra.xlsx";
 		String EXCELFILE_PATH="./src/test/resources/TestData.xlsx";

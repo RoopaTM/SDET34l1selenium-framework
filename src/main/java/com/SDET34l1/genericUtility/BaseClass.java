@@ -51,9 +51,9 @@ public class BaseClass
  * In this annotation it contains normal execution Configuration
  * @throws IOException
  */
-	@Parameters("browser")
+	//@Parameters("browser")
 	@BeforeClass(groups = "baseclass")
-	public void beforeClass1Test(String browser ) throws IOException
+	public void beforeClass1Test(/*String browser*/ ) throws IOException
 	{
 		
 		JavaLibrary jutil = new JavaLibrary();
@@ -62,12 +62,12 @@ public class BaseClass
 		un = FileLibrary.getDataFromPropertyFile("un");
 		pwd = FileLibrary.getDataFromPropertyFile("pwd");
 		timeout = FileLibrary.getDataFromPropertyFile("timeout");
-		//String browsername = FileLibrary.getDataFromPropertyFile("browsername");
+		String browsername = FileLibrary.getDataFromPropertyFile("browsername");
 		longtimeout=jutil.stringToLong(timeout);
 		randomNumber=jutil.getRandomNumber(1000); 
 		
 		
-		switch(browser)
+		switch(browsername)
 		{
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
