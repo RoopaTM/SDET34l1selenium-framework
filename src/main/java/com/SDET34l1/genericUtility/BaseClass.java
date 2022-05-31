@@ -35,7 +35,7 @@ public class BaseClass
 	public LoginPage loginpage;
 	public Homepage homepage;
 	public ExcelLibrary excelLibrary = new ExcelLibrary();
-	public static WebDriver staticdriver;
+	public static WebDriver staticdriver;//variable
 	
 	/**
 	 * In this annotation we open the property file,excel file
